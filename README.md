@@ -7,20 +7,20 @@ The primary goal is to apply web development skills in HTML, CSS, and JavaScript
 
 ## Project Structure
 
-index.html: The main entry point, introducing the organization.
-about.html, contact.html, news.html, video.html: Subpages providing detailed content on various aspects of the organization.
-style.css: Stylesheet defining the visual appearance.
-script.js: JavaScript file enhancing the site's interactivity.
+- index.html: The main entry point, introducing the organization.
+- about.html, contact.html, news.html, video.html: Subpages providing detailed content on various aspects of the organization.
+- style.css: Stylesheet defining the visual appearance.
+- script.js: JavaScript file enhancing the site's interactivity.
 
 ## How to Run
-Clone the repository to your local machine.
+1. Clone the repository to your local machine.
 ```
 git clone [repository-url]
 cd [repository-name]
 ```
-Navigate to the project directory.
-Open index.html in a web browser.
+2. Navigate to the project directory.
+3. Open index.html in a web browser.
 ## Learning Outcomes
-Enhanced understanding of web development fundamentals.
-Improved skills in responsive design and user interface creation.
-Experience in project organization and documentation.
+- Enhanced understanding of web development fundamentals.
+- Improved skills in responsive design and user interface creation.
+- Experience in project organization and documentation.
