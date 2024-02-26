@@ -1,4 +1,4 @@
-#Action for Singapore Dogs: School Project
+# Action for Singapore Dogs: School Project
 <h1>Overview</h1>
 This web project is designed as part of a school assignment, aimed at creating a digital platform for the fictional organization "Action for Singapore Dogs". It showcases the mission to aid stray and abandoned dogs, featuring adoption information, organization initiatives, and how to get involved.
 
