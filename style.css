@@ -1,0 +1,256 @@
+/* General Body Styles */
+body{
+    background: rgb(255, 255, 255); /* White background for the body */
+    color: white; /* Sets default text color to white */
+    font-family: Arial, Helvetica, sans-serif; /* Default font family */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Logo and Title Styling */
+.asd{
+    padding: 40px;
+    margin-top: 20px;
+}
+
+/* Navigation Bar Styling */
+header ul{
+    background: rgb(48, 46, 46);
+    height: 5px;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+header a{
+    color: rgb(255, 255, 255); /* White color for navigation links */
+    text-decoration: none; /* Removes underline from links */
+    text-transform: uppercase; /* Makes the text uppercase for a consistent look */
+    margin-top: -100px;
+    margin-left: 0px;
+}
+
+/* Header Headings Styling */
+header h1{
+    color: #000;
+    text-align: center;
+    margin-top: 0px; /* Removes top margin for the main heading */
+    font-size: 300%;
+ 
+}
+
+header h2{
+    color: gray;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 150%;
+ 
+}
+
+/* Hover Effects */
+.top:hover{
+    transform: scale(1.1); 
+  }
+
+  /* Logo Image Styling */
+.logo a{
+    background-image: url("images/logo.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    top:10px;
+
+}
+
+/* News Section Styling */
+.news{
+    background: white;
+    color: black;
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: row; /* Arranges items in a row */
+    margin-top: 0%;
+
+}
+
+/* News Items Styling */
+.news figure{
+    margin: auto;
+    width: 50%;
+    max-width: 450px;
+
+}
+
+.news p{
+    font-size: 150%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#p1{
+    margin-bottom: 80px;
+}
+
+figcaption{
+    padding: 10px;
+    font-size: 120%;
+    max-width: 400px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.news figure img{
+    border-radius: 10%;
+    width: 450px;
+    height: 450px;
+}
+
+.news figure img:hover{
+    transform: scale(101%);
+}
+
+section{
+    background: white;
+    color: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center horizontally */
+    margin: auto;
+
+}
+
+.video{
+    margin-bottom: 100px;
+}
+
+section iframe{
+    width: 450px;
+    height: 300px;
+}
+
+section.topnews{
+    background: white;
+    color: black;
+    padding: 50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Centers children horizontally */
+    margin: auto;
+    margin-top: -50px;
+}
+
+section.topnews figcaption{
+    width: 800px;
+    margin: auto;
+}
+
+section.topnews p{
+    width: 800px;
+    margin-bottom: 30px;
+}
+
+section.topnews figure{
+    padding: 50px;
+    border-bottom: 2px solid gray;
+}
+
+.about img{
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.img:hover{
+    transform: scale(101%);
+  }
+
+.text{
+    color: rgb(255, 255, 255);
+    width: 450px;
+    text-align: center;
+    transition: color 0.5s ease;
+}
+
+.topnews img{ 
+    width: 800px;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Footer Styling */
+footer{
+    background: black;
+    padding: 10px 20px;
+    position: fixed; /* fixed positioning at the bottom */
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+
+}
+
+/* Contact Form Styling */
+.contact {
+    padding: 100px;
+    margin-top: -100px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the space between form elements */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Centers children horizontally */
+    margin: auto;
+
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 30%; /* Makes input fields take up the full width of the form container */
+    padding: 15px; /* Increases padding for larger click areas and more space inside the fields */
+    margin: 8px 0; /* Adds some space between each form element */
+    box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+    border: 2px solid #ccc; /* Slightly thicker borders for better visibility */
+    border-radius: 4px; /* Adds rounded corners for a smoother look */
+}
+
+.contact button {
+    margin-top: 30px;
+    padding: 15px 20px; /* Larger padding for a bigger button */
+    font-size: 18px; /* Increases font size for easier reading */
+    cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+    background-color: #58bd5b; /* Example button color, change as needed */
+    color: white; /* Text color for the button */
+    border: none; /* Removes the default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact button:hover {
+    background-color: #3f9643; /* Darker shade of the button color on hover */
+}
+
+
+
+
