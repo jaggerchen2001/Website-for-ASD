@@ -5,6 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif; /* Default font family */
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
+    padding-bottom: 100px;
 }
 
 /* Logo and Title Styling */
@@ -69,8 +70,9 @@ header h2{
 
 }
 
-/* News Section Styling */
-.news{
+
+/* dogs Section Styling */
+.dogs{
     background: white;
     color: black;
     display: flex; /* Uses Flexbox for layout */
@@ -79,15 +81,15 @@ header h2{
 
 }
 
-/* News Items Styling */
-.news figure{
+/* dogs Items Styling */
+.dogs figure{
     margin: auto;
     width: 50%;
     max-width: 450px;
 
 }
 
-.news p{
+.dogs p{
     font-size: 150%;
     max-width: 400px;
     text-align: center;
@@ -106,13 +108,19 @@ figcaption{
 
 }
 
-.news figure img{
+/* set opacity to 0.85 for animation */
+.dogs figure img{
     border-radius: 10%;
     width: 450px;
     height: 450px;
+    opacity:0.85;
+    transition: 0.5s ease;
 }
 
-.news figure img:hover{
+/* when hover return opacity to 1 and scale 105% */
+.dogs figure img:hover{
+    opacity:1;
+    transition: 0.5s ease;
     transform: scale(101%);
 }
 
@@ -163,21 +171,47 @@ section.topnews figure{
     border-bottom: 2px solid gray;
 }
 
+.about {
+    padding-bottom: 150px;
+}
+
 .about img{
     width: 500px;
     height: 400px;
     cursor: pointer;
+    border-radius: 30px 30px 0 0;
 }
 
-.img:hover{
-    transform: scale(101%);
-  }
+.about figcaption{
+    margin: auto;
+    padding: 20px;
+}
+
 
 .text{
     color: rgb(255, 255, 255);
-    width: 450px;
+    width: 420px;
     text-align: center;
     transition: color 0.5s ease;
+    margin: auto;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(101%);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding-bottom: 50px;
 }
 
 .topnews img{ 
@@ -240,10 +274,10 @@ footer{
     padding: 15px 20px; /* Larger padding for a bigger button */
     font-size: 18px; /* Increases font size for easier reading */
     cursor: pointer; /* Changes the cursor to indicate the button is clickable */
-    background-color: #58bd5b; /* Example button color, change as needed */
+    background-color: #58bd5b; 
     color: white; /* Text color for the button */
     border: none; /* Removes the default border */
-    border-radius: 4px; /* Rounded corners for the button */
+    border-radius: 4px;
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 

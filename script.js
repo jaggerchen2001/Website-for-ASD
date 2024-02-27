@@ -1,33 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Select all the images within the .about section
-    var images = document.querySelectorAll('.about .img');
+document.addEventListener('DOMContentLoaded', function() {
+    var imgs = document.querySelectorAll('.img'); // Selects all images
+    var texts = document.querySelectorAll('.text'); // Selects all text paragraphs
 
-    // Add a click event listener to each image
-    images.forEach(function(image) {
-        image.addEventListener('click', function() {
-            // First, reset the text color for all paragraphs to their default
-            document.querySelectorAll('.about .text').forEach(function(p) {
-                p.style.color = ""; // Reset to default color
-            });
-
-            // Change the color of the paragraph within the same figure to black
-            var text = this.nextElementSibling.nextElementSibling; 
-            text.style.color = "black";
+    // Function to reset text colors
+    function resetTextColors() {
+        texts.forEach(function(text) {
+            text.style.color = ''; // Resets to default
         });
-    });
-});
+    }
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Select the form within the .contact div
-    var form = document.querySelector('.contact form');
-
-    // Add an event listener for the form submission
-    form.addEventListener('submit', function(event) {
-        // Prevent the form from actually submitting
-        event.preventDefault();
-
-        // Display the alert message
-        alert("Your message has been sent, we will respond as soon as possible.");
-
+    // Loop through all images and add click event listeners
+    imgs.forEach(function(img, index) {
+        img.addEventListener('click', function() {
+            resetTextColors(); // Reset colors on all texts
+            texts[index].style.color = 'black'; // Change color of the clicked img's corresponding text
+        });
     });
 });
