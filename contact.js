@@ -10,5 +10,15 @@ document.addEventListener("DOMContentLoaded", function() {
         // Display the alert message
         alert("Your message has been sent, we will respond as soon as possible.");
 
+        // Clear input
+        clearForm();
     });
+
+    function clearForm() {
+        // Clear each input field in the form
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('subject').value = '';
+        document.getElementById('message').value = '';
+    }
 });
